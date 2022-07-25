@@ -15,6 +15,8 @@
         <!-- Font Awesome CSS -->
         <link rel="stylesheet" href="assets/css/all.min.css">
         <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <!-- aos animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
         <!-- owl  -->
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <!-- Custom CSS -->
@@ -110,59 +112,121 @@
 
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME
+                            <a class="nav-link" href="index.html">HOME
                             </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">ABOUT
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">SERVICES
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contect">CONTACT</a>
+                        </li>
+
                         <li class="nav-item dropdown">
                             <a
                                 class="nav-link dropdown-toggle"
-                                href="#"
+                                href="#service"
                                 id="navbarDropdownMenuLink"
                                 data-toggle="dropdown"
                                 aria-haspopup="true"
                                 aria-expanded="false">
-                                SERVICES
+                                OTHERS
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item" href="#">Drop 1</a>
+                                    <a class="dropdown-item" href="#portfolio">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Drop 2</a>
+                                    <a class="dropdown-item" href="#call-us">Call Us</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#team">team</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#tech-index">TECHNOLOGY INDEX</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#choose-us">Why Choose Us</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#working-process">Our Working Process</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#testimonial">TESTIMONIALS</a>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Drop 3</a>
+                                    <a class="dropdown-item dropdown-toggle" href="#">Service Details</a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" href="#">Drop 4</a>
+                                            <a class="dropdown-item" href="#">Data Analysis</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Drop 5</a>
+                                            <a class="dropdown-item" href="#">Data Analytics</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Data Analytics</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Machine Learning</a>
                                         </li>
 
                                         <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Drop 6</a>
+                                            <a class="dropdown-item dropdown-toggle" href="#">Digital Marketing</a>
                                             <ul class="dropdown-menu">
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Drop 7</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">Drop 8</a>
+                                                    <a class="dropdown-item" href="#">Social Marketing</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-submenu">
-                                            <a class="dropdown-item dropdown-toggle" href="#">Drop 9</a>
+                                            <a class="dropdown-item dropdown-toggle" href="#">App Development</a>
                                             <ul class="dropdown-menu">
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Drop 10</a>
+                                                    <a class="dropdown-item" href="#">Android</a>
                                                 </li>
                                                 <li>
-                                                    <a class="dropdown-item" href="#">Drop 11</a>
+                                                    <a class="dropdown-item" href="#">Flutter</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Native</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">IOS</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Web Development</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Web Design</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Laravel</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Django</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Node</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">React/Angular</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -170,12 +234,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -214,7 +272,7 @@
                                 <a href="about.html" class="btn-primary btn-blue">Learn More
                                     <i class="bx bx-chevron-right"></i>
                                 </a>
-                                <a href="contact.html" class="btn-primary btn-yellow ml-3">Get A Quote
+                                <a href="#contect" class="btn-primary btn-yellow ml-3">Get A Quote
                                     <i class="bx bx-chevron-right"></i>
                                 </a>
                             </div>
@@ -224,17 +282,25 @@
             </div>
         </section>
 
-        <section class="about-us overflow-hidden">
+        <section class="about-us overflow-hidden" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-lg-5 d-flex align-items-center justify-content-center">
+                    <div
+                        class="col-lg-5 col-lg-5 d-flex align-items-center justify-content-center"
+                        data-aos="fade-right"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-sine">
                         <div class="img-wrap"><img class="main img-fluid" src="assets/img/about-part-1.png" alt="">
                             <div class="ly1"><img class="dance" src="assets/img/about-part-2.png" alt=""></div>
                             <div class="ly2"><img class="dance2" src="assets/img/about-part-3.png" alt=""></div>
                         </div>
                     </div>
 
-                    <div class="col-lg-7 d-flex align-items-center justify-content-center">
+                    <div
+                        class="col-lg-7 d-flex align-items-center justify-content-center"
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-sine">
                         <div>
                             <div class="sec-title-1">
                                 <div class="sub-text-1">About</div>
@@ -307,7 +373,7 @@
             </div>
         </section>
 
-        <section class="service overflow-hidden">
+        <section class="service overflow-hidden" id="service">
             <div class="container">
                 <div class="line-inner">
                     <div class="line"></div>
@@ -323,7 +389,7 @@
                             <div class="heading-line"></div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="500">
                         <div class="services-item">
                             <div class="services-icon">
                                 <div class="image-part"><img src="assets/img/web.png" alt="Software Development"></div>
@@ -342,7 +408,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="1000">
                         <div class="services-item">
                             <div class="services-icon">
                                 <div class="image-part"><img src="assets/img/app.png" alt="Software Development"></div>
@@ -361,7 +427,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="1500">
                         <div class="services-item">
                             <div class="services-icon">
                                 <div class="image-part"><img src="assets/img/mlearning.png" alt="Software Development"></div>
@@ -380,7 +446,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="2000">
                         <div class="services-item">
                             <div class="services-icon">
                                 <div class="image-part"><img src="assets/img/data-science.png" alt="Software Development"></div>
@@ -399,7 +465,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="2500">
                         <div class="services-item">
                             <div class="services-icon">
                                 <div class="image-part"><img src="assets/img/analytics.png" alt="Software Development"></div>
@@ -418,7 +484,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="3000">
                         <div class="services-item">
                             <div class="services-icon">
                                 <div class="image-part"><img src="assets/img/dgmark.png" alt="Software Development"></div>
@@ -441,10 +507,10 @@
             </div>
         </section>
 
-        <section class="work-process-area overflow-hidden">
+        <section class="work-process-area overflow-hidden" id="working-process">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" data-aos="fade-right" data-aos-duration="2000">
                         <div class="work-process-left">
                             <div class="section-title">
                                 <span class="sp-color1">Our Working Process</span>
@@ -455,7 +521,7 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="row">
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-6 col-sm-6" data-aos="flip-up" data-aos-duration="1000">
                                 <div class="work-process-card">
                                     <img src="assets/img/discover.png" alt="">
                                     <h3>Discovery</h3>
@@ -464,7 +530,7 @@
                                     <div class="number">01</div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-6 col-sm-6" data-aos="flip-up" data-aos-duration="2000">
                                 <div class="work-process-card">
                                     <img src="assets/img/learning.png" alt="">
                                     <h3>Planning</h3>
@@ -473,7 +539,7 @@
                                     <div class="number">02</div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-6 col-sm-6" data-aos="flip-up" data-aos-duration="3000">
                                 <div class="work-process-card">
                                     <img src="assets/img/execution.png" alt="">
                                     <h3>Execute</h3>
@@ -482,7 +548,7 @@
                                     <div class="number">03</div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-6 col-sm-6" data-aos="flip-up" data-aos-duration="4000">
                                 <div class="work-process-card">
                                     <img src="assets/img/systems.png" alt="">
                                     <h3>Deliver</h3>
@@ -497,10 +563,10 @@
             </div>
         </section>
 
-        <section class="choose-area overflow-hidden">
+        <section class="choose-area overflow-hidden" id="choose-us">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
                         <div class="choose-content mr-20">
                             <div class="section-title">
                                 <span class="sp-color1">Why Choose Us</span>
@@ -533,7 +599,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-down" data-aos-duration="1500">
                         <div class="choose-img">
                             <img src="assets/img/choose-img.jpg" alt="Images" class="img-fluid">
                             <div class="about-play-content">
@@ -541,7 +607,7 @@
                                 <h2>Perfect Solution for IT Services!</h2>
                             </div>
                             <a class="play-btn" data-toggle="modal" data-target="#exampleModal">
-                                <div class="address-icon">
+                                <div class="play-icon">
                                     <i class="fas fa-play"></i>
                                 </div>
                             </a>
@@ -552,7 +618,7 @@
             </div>
         </section>
 
-        <section class="tech-we-use overflow-hidden">
+        <section class="tech-we-use overflow-hidden" id="tech-index">
             <div class="container">
                 <div class="line-inner">
                     <div class="line"></div>
@@ -568,97 +634,152 @@
                             <div class="heading-line"></div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="100">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/react.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="200">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/angularjs.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="300">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/vuejs.png" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="400">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/laravel.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
-                        <div class="use-tech">
-                            <img src="assets/img/tech-logo/codeigniter.png" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="600">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/nodejs.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="700">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/mern-stack.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="800">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/mongodb.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="900">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/oracle.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="500">
+                        <div class="use-tech">
+                            <img src="assets/img/tech-logo/mysql.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1000">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/flutter.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1100">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/aws.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1200">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/docker.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1300">
                         <div class="use-tech">
-                            <img src="assets/img/tech-logo/tensor-flow.png" class="img-fluid">
+                            <img src="assets/img/tech-logo/django.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1400">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/python.png" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1500">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/java.png" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1600">
                         <div class="use-tech">
-                            <img src="assets/img/tech-logo/javascript.png" class="img-fluid">
+                            <img src="assets/img/tech-logo/shopify.png" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1700">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/wordpress.png" class="img-fluid">
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div
+                        class="col-lg-2 col-md-4 col-sm-6 col-6"
+                        data-aos="zoom-in-up"
+                        data-aos-duration="1800">
                         <div class="use-tech">
                             <img src="assets/img/tech-logo/woocommerce.png" class="img-fluid">
                         </div>
@@ -671,17 +792,23 @@
             </div>
         </section>
 
-        <div class="call-us-area overflow-hidden">
+        <div class="call-us-area overflow-hidden" id="call-us">
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-start">
+                    <div
+                        class="col-lg-6 d-none d-lg-flex align-items-center justify-content-start"
+                        data-aos="fade-up"
+                        data-aos-duration="2000">
                         <div class="call-us-img">
                             <img src="assets/img/idea.png" alt="Images">
-                            
+
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12 d-flex align-items-center justify-content-end">
+                    <div
+                        class="col-lg-6 col-12 d-flex align-items-center justify-content-end"
+                        data-aos="fade-down"
+                        data-aos-duration="2000">
                         <div class="call-contact text-center">
                             <a class="play-btn">
                                 <div class="address-icon">
@@ -699,7 +826,179 @@
             </div>
         </div>
 
-        <section class="project overflow-hidden">
+        <section id="team" class="team section-bg" id="team">
+            <div class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="sec-title2 text-center mb-5">
+                    <div class="sub-text">TEAM</div>
+                    <div class="title">We Have Experianced Tech Team</div>
+                    <div class="heading-line"></div>
+                </div>
+
+                <div class="slider">
+                    <div class="owl-carousel owl-theme" id="team-slider">
+                        <div class="item">
+                            <div
+                                class="member aos-init aos-animate"
+                                data-aos="fade-up"
+                                data-aos-delay="300">
+                                <div class="member-img">
+                                    <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href="">
+                                            <i class="fab fa-git"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>William Anderson</h4>
+                                    <span>CTO</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div
+                                class="member aos-init aos-animate"
+                                data-aos="fade-up"
+                                data-aos-delay="400">
+                                <div class="member-img">
+                                    <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href="">
+                                            <i class="fab fa-git"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Amanda Jepson</h4>
+                                    <span>Accountant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div
+                                class="member aos-init aos-animate"
+                                data-aos="fade-up"
+                                data-aos-delay="200">
+                                <div class="member-img">
+                                    <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <div class="social">
+                                            <a href="">
+                                                <i class="fab fa-git"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fas fa-globe"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sarah Jhonson</h4>
+                                    <span>Product Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div
+                                class="member aos-init aos-animate"
+                                data-aos="fade-up"
+                                data-aos-delay="100">
+                                <div class="member-img">
+                                    <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href="">
+                                            <i class="fab fa-git"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Walter White</h4>
+                                    <span>Chief Executive Officer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div
+                                class="member aos-init aos-animate"
+                                data-aos="fade-up"
+                                data-aos-delay="400">
+                                <div class="member-img">
+                                    <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href="">
+                                            <i class="fab fa-git"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Amanda Jepson</h4>
+                                    <span>Accountant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div
+                                class="member aos-init aos-animate"
+                                data-aos="fade-up"
+                                data-aos-delay="400">
+                                <div class="member-img">
+                                    <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href="">
+                                            <i class="fab fa-git"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Amanda Jepson</h4>
+                                    <span>Accountant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="project overflow-hidden" id="portfolio">
             <div class="container">
                 <div class="line-inner">
                     <div class="line"></div>
@@ -715,7 +1014,7 @@
                             <div class="heading-line"></div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="500">
                         <div class="project-container">
                             <img src="assets/img/project/1.png" alt="Avatar" class="img-fluid">
                             <div class="overlay">
@@ -727,7 +1026,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="1000">
                         <div class="project-container">
                             <img src="assets/img/project/2.png" alt="Avatar" class="img-fluid">
                             <div class="overlay">
@@ -740,7 +1039,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="1500">
                         <div class="project-container">
                             <img src="assets/img/project/3.png" alt="Avatar" class="img-fluid">
                             <div class="overlay">
@@ -753,7 +1052,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="2000">
                         <div class="project-container">
                             <img src="assets/img/project/4.png" alt="Avatar" class="img-fluid">
                             <div class="overlay">
@@ -766,7 +1065,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="2500">
                         <div class="project-container">
                             <img src="assets/img/project/5.png" alt="Avatar" class="img-fluid">
                             <div class="overlay">
@@ -779,7 +1078,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="zoom-in-up" data-aos-duration="3000">
                         <div class="project-container">
                             <img src="assets/img/project/6.png" alt="Avatar" class="img-fluid">
                             <div class="overlay">
@@ -799,7 +1098,7 @@
             </div>
         </section>
 
-        <section class="blog-area overflow-hidden">
+        <section class="blog-area overflow-hidden" id="blog">
             <div class="container">
                 <div class="sec-title2 text-center mb-5">
                     <div class="sub-text">Blogs</div>
@@ -807,7 +1106,7 @@
                     <div class="heading-line"></div>
                 </div>
                 <div class="row pt-45">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="500">
                         <div class="blog-card">
                             <div class="blog-img">
                                 <a href="blog-details.html">
@@ -841,7 +1140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="1000">
                         <div class="blog-card">
                             <div class="blog-img">
                                 <a href="blog-details.html">
@@ -875,7 +1174,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in-up" data-aos-duration="1500">
                         <div class="blog-card">
                             <div class="blog-img">
                                 <a href="blog-details.html">
@@ -914,13 +1213,16 @@
             </div>
         </section>
 
-        <section class="testimonial overflow-hidden">
+        <section class="testimonial overflow-hidden" id="testimonial">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 d-flex align-items-center">
+                    <div
+                        class="col-lg-6 d-flex align-items-center"
+                        data-aos="flip-up"
+                        data-aos-duration="1000">
                         <img src="assets/img/testimonial/testomonial.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="flip-down" data-aos-duration="1000">
                         <div class="sec-title-1">
                             <div class="sub-text-1">TESTIMONIALS</div>
                             <div class="title-1">What Customer Saying</div>
@@ -929,7 +1231,7 @@
                         </div>
 
                         <div class="slider">
-                            <div class="owl-carousel owl-theme">
+                            <div class="owl-carousel owl-theme" id="testmonial-slider">
                                 <div class="item">
                                     <div class="testi-item">
                                         <div class="reviews">
@@ -1070,8 +1372,106 @@
             </div>
         </section>
 
-        <footer class="footer-area footer-bg overflow-hidden">
+        <section class="get-quote" id="contect">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-lg-4 d-flex align-items-center justify-content-center mb-5 mb-lg-0"
+                        data-aos="fade-right"
+                        data-aos-duration="1500">
+                        <div class="contact-box">
+                            <div class="sec-title mb-44">
+                                <div class="sub-text new-text white-color">Let's Talk</div>
+                                <div class="title">Speak With Expert Engineers.</div>
+                            </div>
+                            <div class="address-box mb-24">
+                                <div class="address-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="address-text">
+                                    <span class="label">Phone:</span>
+                                    <a href="tel:123222-8888">(123) 222-8888</a>
+                                </div>
+                            </div>
+                            <div class="address-box mb-24">
+                                <div class="address-icon">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <div class="address-text">
+                                    <span class="label">Email:</span>
+                                    <a href="mailto:support@rstheme.com">support@rstheme.com</a>
+                                </div>
+                            </div>
+                            <div class="address-box">
+                                <div class="address-icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="address-text">
+                                    <span class="label">Address:</span>
+                                    <div class="desc">New Jesrsy, 1201, USA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-8 d-flex align-items-center justify-content-center"
+                        data-aos="fade-left"
+                        data-aos-duration="1500">
+                        <div class="contact-widget onepage-style">
+                            <div class="sec-title2 mb-40">
+                                <div class="sub-text contact mb-14">Get a quote</div>
+                                <div class="title testi-title  ml-0 pl-0 mb-3">Fill The Form Below</div>
+                            </div>
+                            <form id="contact-form" action="#">
+                                <div class="row">
+                                    <div class="col-md-6 mb-30"><input
+                                        class="from-control"
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Name"
+                                        required=""></div>
+                                    <div class="col-md-6 mb-30"><input
+                                        class="from-control"
+                                        type="text"
+                                        id="email"
+                                        name="email"
+                                        placeholder="E-Mail"
+                                        required=""></div>
+                                    <div class="col-md-6 mb-30"><input
+                                        class="from-control"
+                                        type="text"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="Phone Number"
+                                        required=""></div>
+                                    <div class="col-md-6 mb-30"><input
+                                        class="from-control"
+                                        type="text"
+                                        id="website"
+                                        name="website"
+                                        placeholder="Your Website"
+                                        required=""></div>
+                                    <div class="col-12 mb-30">
+                                        <textarea
+                                            class="from-control"
+                                            id="message"
+                                            name="message"
+                                            placeholder="Your message Here"
+                                            required=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn-part mt-3">
+                                    <a href="contact.html" class="btn-secondary btn-xt-blue">Get a quote</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <footer class="footer-area footer-bg overflow-hidden">
             <div class="footer-top pt-100 pb-70">
                 <div class="container">
                     <div class="row">
@@ -1106,10 +1506,8 @@
                                         <a href="#">
                                             <i class="fab fa-linkedin-in"></i>
                                         </a>
-
                                     </li>
                                 </ul>
-
                             </div>
                         </div>
                         <div class="col-lg-2 col-sm-6">
@@ -1282,6 +1680,11 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/purecounter.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="assets/js/scroll.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

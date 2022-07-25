@@ -28,6 +28,18 @@ $(document)
         $(window).scroll(function () {
             $scrollamount = $(window).scrollTop();
 
+            if ($scrollamount > 150) {
+                $(".navbar").addClass("fixed_nav");
+
+            } else {
+                $(".navbar").removeClass("fixed_nav");
+
+            }
+        });
+
+        $(window).scroll(function () {
+            $scrollamount = $(window).scrollTop();
+
             if ($scrollamount > 200) {
                 $(".scrollup").addClass("active");
 
@@ -37,13 +49,21 @@ $(document)
             }
         });
 
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 65);
+        });
+
+        
+
         jQuery('#exampleModal').on('hidden.bs.modal', function (e) {
             // do something...
             jQuery('#exampleModal iframe').attr("src", jQuery("#exampleModal  iframe").attr("src"));
         });
 
         //
-        $('.owl-carousel').owlCarousel({
+        $('#testmonial-slider').owlCarousel({
             loop: true,
             margin: 10,
             padding: 10,
@@ -54,10 +74,31 @@ $(document)
                     items: 1
                 },
                 600: {
-                    items: 3
+                    items: 1
                 },
                 1000: {
                     items: 1
+                }
+            }
+        })
+
+
+
+        $('#team-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            padding: 10,
+            nav: false,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4  
                 }
             }
         })

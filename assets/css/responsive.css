@@ -1,5 +1,8 @@
 @media screen and (max-width: 1200px) {}
 @media screen and (max-width: 991px) {
+    .overflow-hidden {
+        overflow-x: hidden!important;
+    }
 
     /* section title start */
     .section-title {
@@ -207,6 +210,9 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .overflow-hidden {
+        overflow-x: hidden!important;
+    }
 
     .search-mb {
         right: 9%;
@@ -261,15 +267,21 @@
 
 }
 @media screen and (max-width: 576px) {
+    .overflow-hidden {
+        overflow-x: hidden!important;
+    }
     .search-mb {
         right: 11%;
     }
 
     .about-play-content {
-       display: none;
+        display: none;
     }
 }
 @media screen and (max-width: 476px) {
+    .overflow-hidden {
+        overflow-x: hidden!important;
+    }
     .search-mb {
         right: 15%;
     }
